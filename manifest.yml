@@ -1,0 +1,11 @@
+applications:
+- buildpack: java_buildpack
+  domain: null
+  host: null
+  instances: 1
+  memory: 1024M
+  name: reedsampleapp
+  path: ./target/springwebapp-1.0-SNAPSHOT.jar
+  routes:
+  - route: reed-sample-app.us-south.cf.appdomain.cloud
+  timeout: 180
